@@ -18,7 +18,7 @@ public class DatabaseConfig {
 	
 	public Connection getConection() throws SQLException, ClassNotFoundException {
 		Class.forName("com.mysql.jdbc.Driver");
-		return DriverManager.getConnection("jdbc:mysql://localhost:3306/android_devmedia", "root","root");
+		return DriverManager.getConnection("jdbc:mysql://", "root","root");
 	}
 	
 	public static void main(String[] args) {
